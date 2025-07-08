@@ -3,49 +3,104 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to middleearthdocs's documentation!
+Welcome to Middle Earth's documentation!
 ========================================================================================
 
-Dev Guide - Getting Started
+Getting Started
 ---------------------------
 
-Before installing any dependencies or writing code, it's a great idea to create a
-virtual environment. LINCC-Frameworks engineers primarily use `conda` to manage virtual
-environments. If you have conda installed locally, you can run the following to
-create and activate a new environment.
+If you had access to ``epyc`` you also have access to Middle Earth. If you need access contact mjuric@uw.edu with your UW NetID.
 
-.. code-block:: console
+Basic Jupyterhub and shell access are as follows:
 
-   >> conda create env -n <env_name> python=3.11
-   >> conda activate <env_name>
+* `Arnor Juptyerhub <https://arnor.astro.washington.edu/jupyter>`_
+* `Gondor Jupyterhub <https://gondor.astro.washington.edu/jupyter>`_
+* Arnor SSH: ``ssh -CYA <NetID>@arnor.astro.washington.edu``
+* Gondor SSH: ``ssh -CYA <NetID>@gondor.astro.washington.edu``
 
+Data access
+-----------------------------
+Home directories are your astro home directory, the same one as was available from epyc.
 
-Once you have created a new environment, you can install this project for local
-development using the following commands:
+You have access to all of your files from ``epyc`` at ``/astro/store/`` on either machine.
 
-.. code-block:: console
+System Specs
+------------------------------
 
-   >> pip install -e .'[dev]'
-   >> pre-commit install
-   >> conda install pandoc
+.. list-table:: Compute Nodes
+   :header-rows: 1
 
+   * - | Hostname
+     - | CPUs
+     - | Mem
+     - | GPUs
+     - | GPU Mem
+       | (Per GPU)
+     - | Network 
+       | Speed
+   * - `Arnor <https://arnor.astro.washington.edu/jupyter>`_
+     - | 128 core 
+       | EPYC 9555
+     - 1536 GB
+     - N/A
+     - N/A
+     - 10 Gbps
+   * - `Gondor <https://gondor.astro.washington.edu/jupyter>`_
+     - | 128 core 
+       | EPYC 9555
+     - 768 GB 
+     - 2 x NVIDIA L40
+     - 48 GB
+     - 1 Gbps
 
-Notes:
+.. list-table:: Storage Locations
+   :header-rows: 1
 
-1) The single quotes around ``'[dev]'`` may not be required for your operating system.
-2) ``pre-commit install`` will initialize pre-commit for this local repository, so
-   that a set of tests will be run prior to completing a local commit. For more
-   information, see the Python Project Template documentation on
-   `pre-commit <https://lincc-ppt.readthedocs.io/en/latest/practices/precommit.html>`_.
-3) Installing ``pandoc`` allows you to verify that automatic rendering of Jupyter notebooks
-   into documentation for ReadTheDocs works as expected. For more information, see
-   the Python Project Template documentation on
-   `Sphinx and Python Notebooks <https://lincc-ppt.readthedocs.io/en/latest/practices/sphinx.html#python-notebooks>`_.
+   * - | Directory 
+     - | Total Space
+     - | Served By
+     - | Network 
+       | (general)
+     - | Storage 
+       | Hardware
+   * - `/astro/store/epycn`
+     - 11 TB
+     - Epyc
+     - 10 Gbps
+     - NVME SSD
+   * - `/astro/store/epyc`
+     - 145 TB
+     - Epyc
+     - 10 Gbps
+
+     - JBOD
+   * - `/astro/store/epyc2`
+     - 175 TB
+     - Epyc
+     - 10 Gbps
+
+     - JBOD
+   * - `/astro/store/epyc3`
+     - 393 TB
+     - Epyc
+     - 10 Gbps
+     - JBOD   
+   * - `/astro/store/epyc4`
+     - 241 TB
+     - Epyc
+     - 10 Gbps
+     - JBOD
+   * - N/A
+     - 1.4 PB
+     - Shire
+     - | 1 Gbps (internet)
+       | 100 Gbps (Arnor)
+       | 100 Gbps (Gondor)
+     - RAID 6+0
+     
 
 
 .. toctree::
    :hidden:
 
    Home page <self>
-   API Reference <autoapi/index>
-   Notebooks <notebooks>

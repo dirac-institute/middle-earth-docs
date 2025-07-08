@@ -1,0 +1,9 @@
+.rst-content td .line-block {
+    margin-bottom: 0px;
+}
+.rst-content th .line-block {
+    margin-bottom: 0px;
+}
+.rst-content th {
+    vertical-align: middle;
+}

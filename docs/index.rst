@@ -24,6 +24,39 @@ Home directories are your astro home directory, the same one as was available fr
 
 You have access to all of your files from ``epyc`` at ``/astro/store/`` on either machine.
 
+Problems and Solutions
+----------------------
+
+GPU code is hanging on Gondor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+On Gondor if your previously-working GPU code hangs, it may be because it is seeing 2 GPUs for the first time. 
+Set ``CUDA_VISIBLE_DEVICES=0`` or ``CUDA_VISIBLE_DEVICES=1`` in your environment to make only GPU 0 or GPU 1 
+available to your code. You can do this from Jupyterlab or the terminal as shown below:
+
+.. tabs::
+
+    .. group-tab:: JupyterHub
+
+        .. code-block:: python
+
+          import torch, os
+          os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+          torch.cuda.device_count()
+
+    .. group-tab:: CLI
+
+        .. code-block:: bash
+
+          $ CUDA_VISIBLE_DEVICES=0 python -c 'import torch; print(torch.cuda.device_count())'
+
+          OR
+
+          $ set CUDA_VISIBLE_DEVICES=0
+          $ python -c 'import torch; print(torch.cuda.device_count())'
+
+To tell which GPU to use, check the current GPU utilization with ``nvidia-smi`` at the command line.
+
+
 Shared Resources
 -----------------------------
 Middle Earth is a shared resource with no automated means of allocation. You can check on current usage directly at a 
@@ -74,15 +107,17 @@ System Specs
      - | Network 
        | Speed
    * - `Arnor <https://arnor.astro.washington.edu/jupyter>`_
-     - | 128 core 
+     - | 2x64 core 
        | EPYC 9555
+       | @ 3.2 Ghz
      - 1536 GB
      - N/A
      - N/A
      - 10 Gbps
    * - `Gondor <https://gondor.astro.washington.edu/jupyter>`_
-     - | 128 core 
-       | EPYC 9555
+     - | 1x64 core 
+       | EPYC 9555 
+       | @ 3.2 Ghz
      - 768 GB 
      - 2 x NVIDIA L40
      - 48 GB

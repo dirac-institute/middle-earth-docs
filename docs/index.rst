@@ -24,41 +24,8 @@ Home directories are your astro home directory, the same one as was available fr
 
 You have access to all of your files from ``epyc`` at ``/astro/store/`` on either machine.
 
-Problems and Solutions
-----------------------
-
-GPU code is hanging on Gondor
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-On Gondor if your previously-working GPU code hangs, it may be because it is seeing 2 GPUs for the first time. 
-Set ``CUDA_VISIBLE_DEVICES=0`` or ``CUDA_VISIBLE_DEVICES=1`` in your environment to make only GPU 0 or GPU 1 
-available to your code. You can do this from Jupyterlab or the terminal as shown below:
-
-.. tabs::
-
-    .. group-tab:: JupyterHub
-
-        .. code-block:: python
-
-          import torch, os
-          os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-          torch.cuda.device_count()
-
-    .. group-tab:: CLI
-
-        .. code-block:: bash
-
-          $ CUDA_VISIBLE_DEVICES=0 python -c 'import torch; print(torch.cuda.device_count())'
-
-          OR
-
-          $ set CUDA_VISIBLE_DEVICES=0
-          $ python -c 'import torch; print(torch.cuda.device_count())'
-
-To tell which GPU to use, check the current GPU utilization with ``nvidia-smi`` at the command line.
-
-
-Shared Resources
------------------------------
+Utilization of Shared Resources
+-------------------------------
 Middle Earth is a shared resource with no automated means of allocation. You can check on current usage directly at a 
 Jupyterhub console or over SSH.
 
@@ -92,8 +59,40 @@ If there are no available GPU resources, programs that use the GPU will experien
 choose which device they run on. If you are experiencing errors running a GPU enabled program you might try running it on a 
 different GPU.
 
+Problems and Solutions
+----------------------
+
+GPU code is hanging on Gondor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+On Gondor if your previously-working GPU code hangs, it may be because it is seeing 2 GPUs for the first time. 
+Set ``CUDA_VISIBLE_DEVICES=0`` or ``CUDA_VISIBLE_DEVICES=1`` in your environment to make only GPU 0 or GPU 1 
+available to your code. You can do this from Jupyterlab or the terminal as shown below:
+
+.. tabs::
+
+    .. group-tab:: JupyterHub
+
+        .. code-block:: python
+
+          import torch, os
+          os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+          torch.cuda.device_count()
+
+    .. group-tab:: CLI
+
+        .. code-block:: bash
+
+          $ CUDA_VISIBLE_DEVICES=0 python -c 'import torch; print(torch.cuda.device_count())'
+
+          OR
+
+          $ set CUDA_VISIBLE_DEVICES=0
+          $ python -c 'import torch; print(torch.cuda.device_count())'
+
+To tell which GPU to use, check the current GPU utilization with ``nvidia-smi`` at the command line.
+
 System Specs
-------------------------------
+------------
 
 .. list-table:: Compute Nodes
    :header-rows: 1

@@ -80,7 +80,7 @@ Remove a Jupyter Kernel
 
 **DANGER!** **Removing a globally accessible kernel can negatively affect other folks on the cluster. DO NOT remove other people's global kernels.**
 
-You need the name of the kernel to remove it, which you can find by `listing the jupyter kernels <List Jupyter Kernel>`_.  You can then
+You need the name of the kernel to remove it (see the `List Jupyter Kernels`_ instructions).  You can then
 remove a jupyter kernel by name using the command below:
 
     .. code-block:: bash

@@ -11,7 +11,7 @@ home directory, which is accessible from either machine equally.
 
     .. code-block:: bash
 
-        $ ssh -CYA <UW NetID>@arnor.astro.washington.edu
+        $ ssh <UW NetID>@arnor.astro.washington.edu
 
 **Note: The steps in this section MUST be done from an SSH terminal, NOT the terminal in Jupyterhub.**
 
@@ -88,9 +88,3 @@ If you need to place your environment in a shared filesystem, rather than your h
 ``conda create`` to specify a path where the environment should live. The path is provided instead of a name, and you need to 
 provide the path to activate the environment. You might do this to share a common environment with a collaborator, or to place a 
 large environment on a shared storage location to avoid running over the storage quota of your home directory.
-
-
------------
-Using mamba
------------
-

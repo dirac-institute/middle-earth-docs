@@ -15,8 +15,8 @@ Basic Jupyterhub and shell access are as follows:
 
 * `Arnor Juptyerhub <https://arnor.astro.washington.edu/jupyter>`_
 * `Gondor Jupyterhub <https://gondor.astro.washington.edu/jupyter>`_
-* Arnor SSH: ``ssh -CYA <NetID>@arnor.astro.washington.edu``
-* Gondor SSH: ``ssh -CYA <NetID>@gondor.astro.washington.edu``
+* Arnor SSH: ``ssh <NetID>@arnor.astro.washington.edu``
+* Gondor SSH: ``ssh <NetID>@gondor.astro.washington.edu``
 
 Communication about system status is in the `#computing <https://uw-dirac.slack.com/archives/C8WRK67LY>`_ channel on the 
 `DiRAC Slack workspace <https://uw-dirac.slack.com/>`_.

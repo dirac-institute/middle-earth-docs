@@ -21,6 +21,8 @@ Basic Jupyterhub and shell access are as follows:
 Communication about system status is in the `#computing <https://uw-dirac.slack.com/archives/C8WRK67LY>`_ channel on the 
 `DiRAC Slack workspace <https://uw-dirac.slack.com/>`_.
 
+If you are looking for astronomy-specific information about Klone, Hyak, or Tillicum look at :doc:`other_compute`
+
 
 ****
 Data
@@ -39,3 +41,4 @@ You have access to all of your files from ``epyc`` at ``/astro/store/`` on eithe
    utilization
    solutions
    specs
+   other_compute

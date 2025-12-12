@@ -82,7 +82,7 @@ An example template email may look like::
     I am a researcher working on causing a Mass Extinction Event with the Solar System Group under Morgoth Bauglir (cc'd in the email).
     Can I get access to Rubin Data access on Middle Earth?
 
-    Andrew Connolly (cc'd) can confirm I am listed in SITCOM-50 and have permissions to access Rubin embargoed data.
+    Andrew Connolly (cc'd) can confirm I am listed in SITCOM-50 and have permissions to access Rubin collaboration data.
     Thanks!
     
     Regards,

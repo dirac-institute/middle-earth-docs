@@ -18,7 +18,7 @@ Basic Jupyterhub and shell access are as follows:
 * Arnor SSH: ``ssh <NetID>@arnor.astro.washington.edu``
 * Gondor SSH: ``ssh <NetID>@gondor.astro.washington.edu``
 
-Communication about system status is in the `#computing <https://uw-dirac.slack.com/archives/C8WRK67LY>`_ channel on the 
+Communication about system status is in the `#computing <https://uw-dirac.slack.com/archives/C8WRK67LY>`_ channel on the
 `DiRAC Slack workspace <https://uw-dirac.slack.com/>`_.
 
 If you are looking for astronomy-specific information about Klone, Hyak, or Tillicum look at :doc:`other_compute`
@@ -34,11 +34,13 @@ You have access to all of your files from ``epyc`` at ``/astro/store/`` on eithe
 .. toctree::
    :maxdepth: 2
    :hidden:
-   
+
    self
+   user_accounts
    conda
    jupyterkernel
    utilization
    solutions
    specs
    other_compute
+   data

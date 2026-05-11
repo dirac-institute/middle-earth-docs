@@ -3,24 +3,34 @@
 Welcome to Middle Earth
 #######################
 
-Middle Earth is the `DiRAC Institute's <https://dirac.astro.washington.edu/>`_ new compute cluster. It is the successor to ``epyc``
+Middle Earth is the `DiRAC Institute's <https://dirac.astro.washington.edu/>`_ new compute cluster. It is the successor to ``epyc``.
 
 ***************
 Getting Started
 ***************
 
-If you had access to ``epyc`` you also have access to Middle Earth. If you need access contact mjuric@uw.edu with your UW NetID.
+If you had access to ``epyc`` you also have access to Middle Earth. If you need access, see :doc:`user_accounts` for the request process.
 
 Basic Jupyterhub and shell access are as follows:
 
-* `Arnor Juptyerhub <https://arnor.astro.washington.edu/jupyter>`_
+* `Arnor Jupyterhub <https://arnor.astro.washington.edu/jupyter>`_
 * `Gondor Jupyterhub <https://gondor.astro.washington.edu/jupyter>`_
 * Arnor SSH: ``ssh <NetID>@arnor.astro.washington.edu``
 * Gondor SSH: ``ssh <NetID>@gondor.astro.washington.edu``
 
+For hardware details and available resources, see :doc:`specs`.
+
 Communication about system status is in the `#computing <https://uw-dirac.slack.com/archives/C8WRK67LY>`_ channel on the
 `DiRAC Slack workspace <https://uw-dirac.slack.com/>`_.
 
+
+************
+Environments
+************
+For setting up Python environments and notebook kernels, see:
+
+* :doc:`conda` — installing Conda and creating environments
+* :doc:`jupyterkernel` — configuring Jupyter kernels for JupyterHub
 
 ****
 Data
@@ -28,6 +38,8 @@ Data
 Home directories are your astro home directory, the same one as was available from ``epyc``.
 
 You have access to all of your files from ``epyc`` at ``/astro/store/`` on either machine.
+
+Working project data should live on the shared store rather than your home directory. The convention is to create a project directory under ``/astro/store/shire/<group>/<user>`` and symlink it to ``~/projects`` — see :doc:`projects` for the full setup. For shared dataset access patterns, see :doc:`data`.
 
 .. toctree::
    :maxdepth: 2
@@ -40,4 +52,5 @@ You have access to all of your files from ``epyc`` at ``/astro/store/`` on eithe
    utilization
    solutions
    specs
+   projects
    data

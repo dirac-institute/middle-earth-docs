@@ -42,7 +42,6 @@ New projects should use ``/astro/store/shire`` for data storage.
    conda
    jupyterkernel
    utilization
-   storage
    solutions
    rubin
    specs

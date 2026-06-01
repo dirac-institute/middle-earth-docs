@@ -31,6 +31,8 @@ Home directories are your astro home directory, the same one as was available fr
 
 You have access to all of your files from ``epyc`` at ``/astro/store/`` on either machine.
 
+New projects should use ``/astro/store/shire`` for data storage.
+
 .. toctree::
    :maxdepth: 2
    :hidden:

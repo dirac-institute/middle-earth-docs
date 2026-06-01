@@ -57,13 +57,11 @@ Storage Locations
      - 145 TB
      - Epyc
      - 10 Gbps
-
      - JBOD
    * - `/astro/store/epyc2`
      - 175 TB
      - Epyc
      - 10 Gbps
-
      - JBOD
    * - `/astro/store/epyc3`
      - 393 TB
@@ -75,11 +73,14 @@ Storage Locations
      - Epyc
      - 10 Gbps
      - JBOD
-   * - *Coming Soon...*
+   * - `/astro/store/shire`
      - 1.4 PB
      - Shire
-     - | 1 Gbps (internet)
-       | 100 Gbps (Arnor)
-       | 100 Gbps (Gondor)
+     - 100 Gbps
      - RAID 6+0
+   * - `/astro/store/shiren`
+     - 7 TB
+     - Shire
+     - 100 Gbps
+     - NVME SSD
      

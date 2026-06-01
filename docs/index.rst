@@ -41,6 +41,7 @@ You have access to all of your files from ``epyc`` at ``/astro/store/`` on eithe
    jupyterkernel
    utilization
    solutions
+   rubin
    specs
    other_compute
    data

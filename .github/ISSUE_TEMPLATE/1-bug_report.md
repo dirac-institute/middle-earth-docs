@@ -2,7 +2,7 @@
 name: Bug report
 about: Tell us about a problem to fix
 title: 'Short description'
-labels: 'bug'
+labels: 'type:followup'
 assignees: ''
 
 ---

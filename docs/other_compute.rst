@@ -32,7 +32,7 @@ Hyak Tillicum
 If you are reading this before February 25, 2026 Andy Connally has some hours that he may let you use; however,
 there is no general allocation for compute users.
 
-epyc
+Epyc
 ^^^^
 
 Epyc is the legacy compute system which Middle Earth is superceding. An overview of Epyc's capabilities is 

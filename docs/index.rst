@@ -39,6 +39,7 @@ New projects should use ``/astro/store/shire`` for data storage.
 
    self
    user_accounts
+   ssh
    conda
    jupyterkernel
    utilization

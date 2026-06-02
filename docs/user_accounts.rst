@@ -1,3 +1,4 @@
+.. _user_account_creation_ref:
 #################################
 Requesting access to Middle Earth
 #################################

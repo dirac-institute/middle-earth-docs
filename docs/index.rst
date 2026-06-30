@@ -23,6 +23,8 @@ For hardware details and available resources, see :doc:`specs`.
 Communication about system status is in the `#computing <https://uw-dirac.slack.com/archives/C8WRK67LY>`_ channel on the
 `DiRAC Slack workspace <https://uw-dirac.slack.com/>`_.
 
+If you are looking for astronomy-specific information about Klone, Hyak, or Tillicum look at :doc:`other_compute`
+
 
 ************
 Environments
@@ -39,7 +41,7 @@ Home directories are your astro home directory, the same one as was available fr
 
 You have access to all of your files from ``epyc`` at ``/astro/store/`` on either machine.
 
-Working project data should live on the shared store rather than your home directory. The convention is to create a project directory under ``/astro/store/shire/<group>/<user>`` and symlink it to ``~/projects`` — see :doc:`projects` for the full setup. For shared dataset access patterns, see :doc:`data`.
+New projects should use ``/astro/store/shire`` for data storage.
 
 .. toctree::
    :maxdepth: 2
@@ -51,6 +53,7 @@ Working project data should live on the shared store rather than your home direc
    jupyterkernel
    utilization
    solutions
+   rubin
    specs
-   projects
+   other_compute
    data

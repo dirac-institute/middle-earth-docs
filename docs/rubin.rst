@@ -27,9 +27,9 @@ Install a package directly specifying the channel on the command line:
 
 .. code-block:: bash
 
-    (my-conda-env) $ conda install -c file:///astro/store/shiren/dirac-conda lsst_distrib
+    (my-conda-env) $ conda install -c file:///astro/store/shiren/dirac-conda lsst-distrib
     # If you need a particular version
-    (my-conda-env) $ conda install -c file:///astro/store/shiren/dirac-conda lsst_distrib==30.0.7
+    (my-conda-env) $ conda install -c file:///astro/store/shiren/dirac-conda lsst-distrib==30.0.7
 
 
 Add the channel to your environment so you do not have to specify it at install time
@@ -39,7 +39,7 @@ Add the channel to your environment so you do not have to specify it at install 
     # Add the channel to your environment
     (my-conda-env) $ conda config --env --add channels file:///astro/store/shiren/dirac-conda
     # Install the lsst_distrib package
-    (my-conda-env) $ conda install lsst_distrib
+    (my-conda-env) $ conda install lsst-distrib
 
 
 Create a new environment with the channel (and package) preinstalled
@@ -47,7 +47,7 @@ Create a new environment with the channel (and package) preinstalled
 .. code-block:: bash
 
     # lsst_distrib needs python, so the correct version of python will be installed as a dependency
-    $ conda create -n my-conda-env -c file:///astro/store/shiren/dirac-conda -c conda-forge lsst_distrib=30.0.7
+    $ conda create -n my-conda-env -c file:///astro/store/shiren/dirac-conda -c conda-forge lsst-distrib=30.0.7
     $ conda activate my-conda-env
     (my-conda-env) $
 

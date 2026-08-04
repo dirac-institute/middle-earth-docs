@@ -54,6 +54,7 @@ New projects should use ``/astro/store/shire`` for data storage.
    utilization
    solutions
    rubin
+   rubin_dp2
    specs
    other_compute
    data

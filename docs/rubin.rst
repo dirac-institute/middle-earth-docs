@@ -29,7 +29,7 @@ Install a package directly specifying the channel on the command line:
 
     (my-conda-env) $ conda install -c file:///astro/store/shiren/dirac-conda lsst-distrib
     # If you need a particular version
-    (my-conda-env) $ conda install -c file:///astro/store/shiren/dirac-conda lsst-distrib==30.0.7
+    (my-conda-env) $ conda install -c file:///astro/store/shiren/dirac-conda lsst-distrib==30.0.10
 
 
 Add the channel to your environment so you do not have to specify it at install time

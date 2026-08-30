@@ -25,7 +25,8 @@ Local file locations
      - ``/astro/store/shire/hats/catalogs/rubin_dp2``
    * - Hyak Klone
      - ``/gscratch/dirac/hats/catalogs/rubin_dp2``
-
+   * - Tillicum
+     - ``/gpfs/datasets/rubin_edp2/hats`` documentation at `Rubin Observatory EDP2 Dataset <https://hyak.uw.edu/docs/resources/data-commons/rubin_edp2/>`
 
 ----------------------------
 Loading catalogs with LSDB
@@ -145,6 +146,8 @@ to a region of sky first unless you intend to match the full catalogs:
 
     matched = dp2_objects.crossmatch(gaia, n_neighbors=1, radius_arcsec=1.0).compute()
 
+
+A Gaia x rubin_dp2 inner join can be found on shire at ``/astro/store/shire/pferguso/gaia_x_dp2``.
 
 ----------------------------
 Upstream documentation

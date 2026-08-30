@@ -11,6 +11,8 @@ Many astronomical survey datasets are stored in `Hats <https://hats.readthedocs.
 
 To see a list of available catalogs, and their documentation refer to `https://data.lsdb.io/ <https://data.lsdb.io/>`_.
 
+For Rubin DP2 catalogs specifically, see :doc:`rubin_dp2` for local file paths and usage examples.
+
 For example instructions to load the `Gaia DR3 <https://data.lsdb.io/#Gaia/Gaia_DR3_(US-West,_HTTP)>`_ catalog in lsdb are the following:
 
 .. code-block:: python

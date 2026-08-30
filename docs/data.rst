@@ -19,20 +19,20 @@ For example instructions to load the `Gaia DR3 <https://data.lsdb.io/#Gaia/Gaia_
 
     lsdb.open_catalog('https://data.lsdb.io/hats/gaia_dr3')
 
-This web accessible URL can be replaced with a local path if you are running on Middle Earth / epyc using the prefix ``/epyc/data3/hats/catalogs/`` .
+This web accessible URL can be replaced with a local path if you are running on Middle Earth / shire using the prefix ``/astro/store/shire/hats/catalogs/`` .
 
 And the same line of code becomes:
 
 .. code-block:: python
 
-    lsdb.open_catalog('/epyc/data3/hats/catalogs/gaia_dr3')
+    lsdb.open_catalog('/astro/store/shire/hats/catalogs/gaia_dr3')
 
 Making this change will greatly increase the speed of data access, especially for large datasets.
 
 ---------------------------------------
 Symlinking datasets into your workspace
 ---------------------------------------
-Rather than typing out long paths like ``/epyc/data3/hats/catalogs/gaia_dr3`` every time, you can create a symbolic link (symlink)
+Rather than typing out long paths like ``/astro/store/shire/hats/catalogs/gaia_dr3`` every time, you can create a symbolic link (symlink)
 that points from a short path in your home or project directory to the dataset on the shared store. The symlink behaves like the
 original directory but takes up no additional space.
 
@@ -42,7 +42,7 @@ is the new shortcut you are creating:
 .. code-block:: bash
 
     $ cd ~
-    $ ln -s /epyc/data3/hats/catalogs/gaia_dr3 gaia_dr3
+    $ ln -s /astro/store/shire/hats/catalogs/gaia_dr3 gaia_dr3
 
 You can now access the catalog through the shorter path:
 
